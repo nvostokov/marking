@@ -321,7 +321,7 @@ text-decoration: underline;
   }
 
   .map__legend {
-    top: 300px;
+    top: 320px;
     left: 20px;
     padding: 5px 10px;
     font-weight: 600;
@@ -335,7 +335,7 @@ text-decoration: underline;
   }
   .map__title {
     padding: 5px 10px;
-    top: 430px;
+    top: 460px;
     font-size: 10px;
     max-width: 200px;
     box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
