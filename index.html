@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Refresh" content="60" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-search/dist/leaflet-search.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-search/dist/leaflet-search.min.css" />
+    <link rel="stylesheet" href="css/style.css?v=170724">
+    <title>Карта дорог</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <a href="http://cam.adormezen.ru" class="header__logo">
+                    <img src="images/logo.svg" alt="">
+                </a>
+            </div>
+        </header>
+        <div id="map"></div>
+        <main class="page _container">
+            <div class="map__legend">
+                <div>
+                  <input type="checkbox" id="layer1" class="red" checked><label for="layer1">03-ос 2024<br></label>
+                </div>
+                <div>
+                  <input type="checkbox" id="layer2" class="green" checked><label for="layer2">04-ос 2024<br></label>
+                </div>
+                <div>
+                  <input type="checkbox" id="layer3" class="black" checked><label for="layer3">05-ос 2024<br></label>
+                </div>
+                <div>
+                  <input type="checkbox" id="layer4" class="blue" checked><label for="layer4">07-ос 2024<br></label>
+                </div>
+                <div>
+                  <input type="checkbox" id="layer5" class="purple" checked><label for="layer5">08-ос 2024<br></label>
+                </div>
+            </div>
+            <div class="map__title">
+              Поиск работает только по первому слову в названии дороги, например, Вельск - Шангалы. Вводим "Вельск" и выпадут все варианты.
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <p>АО "Мезенское дорожное управление" 2025</p>
+            </div>
+        </footer>
+    </div>
+    <script src="geo.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
