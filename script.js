@@ -9,7 +9,8 @@ console.log(scaleRoad, scaleMap, windowWidth, window.innerHeight);
 var map = L.map('map').setView([62.8393, 40.5168], scaleMap); // Архангельская область
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  maxZoom: 19
+  maxZoom: 19,
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
 
